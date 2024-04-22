@@ -46,10 +46,6 @@ function onAddTaskClicked(event) {
     saveTask(taskName, false);
 }
 
-
-
-
-
 function onTodolistClicked(event) {
     let targetElement = event.toElement;
 
