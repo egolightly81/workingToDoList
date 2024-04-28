@@ -14,7 +14,7 @@
   <form>
     <label>
       Task Name:
-      <input type="text" id="task-input"  placeholder="What needs to be done?">
+      <input id="task-input" type="text" placeholder="Do assignment">
     </label>
     <button type="button" id="add-task">
       Add Task
@@ -22,20 +22,26 @@
   </form>
   <ul id="todo-list">
   </ul>
-  <button type="button" id="show-all">All</button>
-  <button type="button" id="show-active">Active</button>
-  <button type="button" id="show-completed">Completed</button>
 
+
+  <!--
+    We are using localstorage in a relatively simple way.  I store the task name
+    as the key and the value as a boolean of whether the item has been checked
+    or not. To make it easier to locate the tasks name is I changed the
+    template in HTML to include a <span> element.  A <span> was choosen
+    as this is a inline-element (as opposed to a block-element) and won't
+    effect the layout.
+  -->
   <script type="text/template" id="list-item-template">
     <li class="task">
       <label>
         <input class="checkbox" type="checkbox">
-        <!-- TASK_NAME -->
+        <span class="task-name"><!-- TASK_NAME --></span>
       </label>
     </li>
   </script>
-
-  <script src="script_6.js"></script>
+  <!-- Move all the JavaScript into the external file-->
+  <script src="js/script_7.js"></script>
 </body>
 
 </html>
