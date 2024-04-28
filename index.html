@@ -6,7 +6,7 @@
   <title>My Todo List</title>
   <meta name="author" content="Michael Borck">
   <meta name="description" content="Explore flatland and interact with its inhabitants">
-  <link rel="stylesheet" type="text/css" href="style_1.css">
+  <link rel="stylesheet" type="text/css" href="css/style_1.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
   <form>
     <label>
       Task Name:
-      <input id="task-input" type="text" placeholder="Do assignment">
+      <input type="text" id="task-input"  placeholder="What needs to be done?">
     </label>
     <button type="button" id="add-task">
       Add Task
@@ -22,26 +22,21 @@
   </form>
   <ul id="todo-list">
   </ul>
+  <button type="button" id="show-all">All</button>
+  <button type="button" id="show-active">Active</button>
+  <button type="button" id="show-completed">Completed</button>
 
-
-  <!--
-    We are using localstorage in a relatively simple way.  I store the task name
-    as the key and the value as a boolean of whether the item has been checked
-    or not. To make it easier to locate the tasks name is I changed the
-    template in HTML to include a <span> element.  A <span> was choosen
-    as this is a inline-element (as opposed to a block-element) and won't
-    effect the layout.
-  -->
   <script type="text/template" id="list-item-template">
     <li class="task">
       <label>
         <input class="checkbox" type="checkbox">
-        <span class="task-name"><!-- TASK_NAME --></span>
+        <!-- TASK_NAME -->
       </label>
     </li>
   </script>
-  <!-- Move all the JavaScript into the external file-->
-  <script src="js/script_7.js"></script>
+
+  <script src="js/script_5.js"></script>
+  <script src="js/script_6.js"></script>
 </body>
 
 </html>
