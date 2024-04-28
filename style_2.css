@@ -1,0 +1,65 @@
+/* Minimal styling for in-class exercise */
+/* Author: Emerald Golightly*/
+/* Email: emerald.golightly@student.curtin.edu */
+/* Tags: Todo */
+
+body {
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.task {
+  list-style: none;
+  font-size: 22px;
+  line-height: 1.8em;
+  width: 400px;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+#todo-list {
+  padding: 3px; /* Added unit to padding */
+}
+
+h1 {
+  text-align: center;
+}
+
+#task-input {
+  width: 360px;
+  font-size: 16px;
+  line-height: 1.4em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #888888; /* Corrected hex color */
+}
+
+#task-input:focus {
+  outline: none;
+  border-bottom-color: #0d99fc; /* Corrected hex color */
+}
+
+button {
+  font-size: 16px;
+  line-height: 1.4em;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background: #0d99fc; /* Corrected hex color */
+}
